@@ -121,6 +121,7 @@ prism-folder-tree/
 │   └── ftree.test.js
 ├── .gitignore
 ├── LICENSE
+├── README.md
 └── package.json
 ```
 

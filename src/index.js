@@ -39,7 +39,7 @@ function render(tree, o = {}) {
       const collapsed = k.type === "dir" && lvl + 1 >= depth && k.children.size;
       const name = k.name + (k.type === "dir" && slash ? "/" : "");
       const ic = icons ? iconFor(k.name, k.type) + " " : "";
-      const meta = [sizes ? humanBytes(k.size) : "", collapsed && counts ? `${k.files} files` : ""].filter(Boolean).join(" · ");
+      const meta = [sizes ? humanBytes(k.size) : "", collapsed && counts ? `${k.files} file${k.files === 1 ? "" : "s"}` : ""].filter(Boolean).join(" · ");
       const n = notes[k.name] || notes[relOf(k)];
       lines.push({ prefix: prefix + (last ? P.l : P.t), name: ic + (k.type === "dir" ? dir(name) : name), plainName: ic + name, meta, note: n });
       if (k.type === "dir" && !collapsed) { k._parent = node; rec(k, prefix + (last ? P.s : P.v), lvl + 1); }
