@@ -1,0 +1,36 @@
+{
+  "name": "prism-folder-tree",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI that prints a .gitignore-aware project tree with icons, sizes and notes — and writes it straight into your README between <!-- tree --> markers.",
+  "bin": {
+    "ftree": "bin/ftree.js"
+  },
+  "main": "src/index.js",
+  "files": [
+    "bin",
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "cli",
+    "tree",
+    "directory-tree",
+    "readme",
+    "markdown",
+    "documentation",
+    "devtools",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-folder-tree.git"
+  },
+  "homepage": "https://github.com/krishyaa06/prism-folder-tree#readme",
+  "engines": {
+    "node": ">=18.17"
+  }
+}
